@@ -7,13 +7,13 @@
 import WCDBSwift
 import Foundation
 
-class FMWCDBWrapLoader: NSObject {
+class WDWCDBWrapLoader: NSObject {
     
     /** 单例 */
-    static let share = FMWCDBWrapLoader()
+    static let share = WDWCDBWrapLoader()
     
     /** 数据库实例 */
-   fileprivate let dbInstance = FMWCDBBaseOperation()
+   fileprivate let dbInstance = WDWCDBBaseOperation()
     
     override init() {
         super.init()

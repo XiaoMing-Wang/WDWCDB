@@ -12,13 +12,13 @@ fileprivate let library = NSSearchPathForDirectoriesInDomains(.libraryDirectory,
 public let libraryMemePrefix = library! + "/default/"
 
 //MARK: 表名协议
-typealias FMDBStorageProtocol = TableCodable & FMTableNameProtocol
-protocol FMTableNameProtocol {
+typealias WDDBStorageProtocol = TableCodable & WDTableNameProtocol
+protocol WDTableNameProtocol {
     func tableName() -> String?
     static func tableName() -> String?
 }
 
-class FMDBBaseModel: NSObject {
+class WDDBBaseModel: NSObject {
 
     //MARK: 以类名作为表名 需要修改重写该方法
     func tableName() -> String? {

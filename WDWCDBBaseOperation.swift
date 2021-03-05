@@ -9,7 +9,7 @@
 import UIKit
 import WCDBSwift
 
-class FMWCDBBaseOperation: NSObject {
+class WDWCDBBaseOperation: NSObject {
 
     /** 用户id用来切换数据库 nil则会关闭数据库 */
     private var dbName: String?
@@ -155,7 +155,7 @@ class FMWCDBBaseOperation: NSObject {
 }
 
 /// 表操作
-extension FMWCDBBaseOperation {
+extension WDWCDBBaseOperation {
     
     //MARK:创建表 表可以重复创建内部有判断
     @discardableResult
@@ -214,7 +214,7 @@ extension FMWCDBBaseOperation {
 }
 
 /// 数据库操作
-extension FMWCDBBaseOperation {
+extension WDWCDBBaseOperation {
                  
     /// 创建DB(WCDB在表为空的时候是不会创建db文件的 创建一张表)
     fileprivate func createDataBase() ->Database? {
